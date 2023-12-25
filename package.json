@@ -9,13 +9,46 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
+  "author": {
+    "name": "maxoyed",
+    "email": "maxoyed@gmail.com",
+    "url": "https://github.com/maxoyed"
+  },
+  "contributors": [
+    "maxoyed <maxoyed@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxoyed/koishi-plugin-qianfan-zhishiku.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxoyed/koishi-plugin-qianfan-zhishiku/issues"
+  },
+  "homepage": "https://github.com/maxoyed/koishi-plugin-qianfan-zhishiku#readme",
   "peerDependencies": {
     "koishi": "^4.16.2"
+  },
+  "devDependencies": {
+    "koishi-plugin-qianfan-service": "^0.0.4",
+    "qianfan": "^0.0.8"
+  },
+  "koishi": {
+    "description": {
+      "zh": "基于百度智能云千帆大模型的知识库问答插件"
+    },
+    "service": {
+      "required": [
+        "qianfan"
+      ],
+      "implements": []
+    },
+    "locales": [
+      "zh"
+    ]
   }
 }
